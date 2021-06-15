@@ -1,0 +1,71 @@
+<div class="jumbotron jumbotron-fluid">
+	<div class="container" style="text-align: center;">
+		<h1 class="display-4">BLOGD</h1>
+		<p class="lead">Your go-to guide for experiencing Diyarbakır</p>
+	</div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand">Menu</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="/">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="bestof">Best Of</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="places">Places</a>
+				</li>
+			</ul>
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+<div class="row m-0">
+	<div class="col-md-3 sidenav" style="border-style: solid; text-align: center;">
+		<h3>Best of Diyarbakır</h3>
+		<ul class="list-group">
+			<button class="list-group-item" routerLink="bestof/food">Best Food</button>
+			<button class="list-group-item" routerLink="bestof/dessert_stores">Best Dessert Stores</button>
+			<button class="list-group-item" routerLink="bestof/cafes">Best Cafés</button>
+			<button class="list-group-item" routerLink="bestof/hotels">Best Hotels</button>
+			<button class="list-group-item" routerLink="bestof/museums">Best Museums</button>
+		</ul>
+		<h3>Places to See in Diyarbakır</h3>
+		<ul class="list-group">
+			<button class="list-group-item" routerLink="places/ongozlu_kopru">Ongözlü Köprü</button>
+			<button class="list-group-item" routerLink="places/gazi_kosku">Gazi Köşkü</button>
+			<button class="list-group-item" routerLink="places/benu_sen_burcu">Ben-u Sen Burcu</button>
+			<button class="list-group-item" routerLink="places/hevsel_bahcesi">Hevsel Bahçesi</button>
+			<button class="list-group-item" routerLink="places/meryem_ana_kilisesi">Meryem Ana Kilisesi</button>
+			<button class="list-group-item" routerLink="places/dort_ayakli_minare">Dört Ayaklı Minare</button>
+			<button class="list-group-item" routerLink="places/surlar">Surlar</button>
+		</ul>
+	</div>
+	<div class="col-md-9" style="text-align: center;">
+		<router-outlet></router-outlet>
+	</div>
+</div>
+
+
+<!-- <div class="row m-0">
+	<div class="col-md-3" style="border-style: solid; text-align: center;">
+	</div>
+	<div class="col-md-6" style="border-style: solid; text-align: center;">
+		Ana sayfa
+	<router-outlet></router-outlet>
+	</div>
+	<div class="col-md-3" style="border-style: solid; text-align: center;">
+		Takvim
+	</div>
+</div> -->
